@@ -1,7 +1,7 @@
 <?php
 
 echo"<title>Worked</title>"
-echo"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />";//LEGGO TUTTI I TIPI DI CARATTERI ANCHE NON ASCII
+echo"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />";
 //INPUT DEI DATI DALLA PAGINA HTML 
 
 $mittente = $_POST ['nome_mittente'];
