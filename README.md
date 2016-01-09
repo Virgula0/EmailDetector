@@ -1,5 +1,5 @@
 # EmailDetector
-This script detect if a victim click on your spammer link via email. It will notify you at your personal email.
+This script detect if a victim click on your spammer link via email and you can retrivied information about his email and his passoword if it will insert data. It will notify you at your personal email automatically.
 
 LEGGIMI [ITA] 
 
