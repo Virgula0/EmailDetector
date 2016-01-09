@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <title>Email Detector</title>
 </head>
 <body>
@@ -10,10 +9,19 @@
    <div align="center">
    Inserisci la tua email dove verrai avvisato: <input type="text" name="nome_mittente" placeholder="tua_email@example.com"><br>
    Inserisci nome della persona destinataria: <input type="text" name="nome_destinatario"><br>
-   Email Destinatario: <input type="text" name="email_destinatario" placeholder="email@example.com"><br>
+   Email Destinatario: <input type="text" name="email_destinatario" placeholder="email@example.com"><br><br><br>
+   Inserisci l'indirizzo completo del percorso dove sono contenuti <i>questa pagina e lo script tester.php</i>. <br>
+   Esempio se il file si trova nella cartella <b>patch</b>: <br>
+   <i>http://miosito.com/patch</i><br>
+   Attenzione! <br>
+   Inserisci il percorso esattamente come nell'esempio senza aggiungere nulla del tipo: <b>/</b> a fine url.
+   Una svista del genere potrebbe mandare a put***e tutto.<br>
+   <textarea type="text" name="url" placeholder="http://myserver.com/dir" rows="1" cols="30"></textarea>
+   <br><br>
    <input type="submit" value="Procedi">
    </div>
    </form>
 
 </body>
 </html>
+
