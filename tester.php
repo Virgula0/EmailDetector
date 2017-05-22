@@ -1,45 +1,4 @@
 <?php
-use \Rollbar\Rollbar;
-
-// Installs global error and exception handlers
-$config = array(
-    // required
-    'access_token' => '5e212ebd9c034de49e2c46598d929e42',
-    // optional - environment name
-    'environment' => 'production',
-    // optional - path to directory your code is in. Used for linking stack traces.
-    'root' => '/Users/brian/www/myapp'
-);
-Rollbar::init($config);
-
-try {
-    throw new \Exception('test exception');
-} catch (\Exception $e) {
-    Rollbar::log(Level::error(), $e);
-}
-
-// Message at level 'info'
-Rollbar::log(Level::info(), 'testing info level');
-
-// With extra data (3rd arg) and custom payload options (4th arg)
-Rollbar::log(
-    Level::info(),
-    'testing extra data',
-    array("some_key" => "some value") // key-value additional data
-);
-
-// If you want to check if logging with Rollbar was successful
-$response = Rollbar::log(Level::info(), 'testing wasSuccessful()');
-if (!$response->wasSuccessful()) {
-    throw new \Exception('logging with Rollbar failed');
-}
-
-// Raises an E_NOTICE which will *not* be reported by the error handler
-$foo = $bar;
-
-// Will be reported by the exception handler
-throw new \Exception('testing exception handler');
-
 //© codec by Virgula #RESPECT
 
 echo"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" /> 
